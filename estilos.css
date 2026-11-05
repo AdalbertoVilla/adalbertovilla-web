@@ -256,3 +256,185 @@ main {
   width: 42px;
   height: auto;
 }
+/* Cita de la sección Mi visión */
+blockquote {
+  max-width: 650px;
+  margin: 40px 0 0;
+  padding-left: 24px;
+  border-left: 3px solid #8aaabc;
+  color: #234159;
+  font-size: 22px;
+  line-height: 1.5;
+}
+/* Color de texto en las secciones claras */
+.seccion:not(.seccion-azul) p:not(.numero-seccion) {
+  color: #30495c;
+}
+/* Cultura, planeación e indicadores */
+.pilares {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  max-width: 1200px;
+  margin-top: 48px;
+  overflow: hidden;
+  border: 1px solid #b5cbd6;
+  border-radius: 4px;
+  background-color: #b5cbd6;
+}
+
+.pilar {
+  padding: 32px;
+  background-color: #d7e7ed;
+  color: #0c264c;
+}
+
+.pilar .pilar-etiqueta {
+  margin: 0 0 20px;
+  color: #365e7c;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pilar h3 {
+  margin: 0 0 16px;
+  font-size: 26px;
+}
+
+.pilar p:not(.pilar-etiqueta) {
+  margin: 0;
+  color: #30495c;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* En celular, los recuadros aparecen uno debajo de otro */
+@media (max-width: 700px) {
+  .pilares {
+    grid-template-columns: 1fr;
+  }
+
+  .pilar {
+    padding: 26px;
+  }
+}
+/* Temas de enfoque */
+.temas-enfoque {
+  max-width: 900px;
+  margin-top: 45px;
+  border-top: 1px solid #cbd6dc;
+}
+
+.tema {
+  display: flex;
+  gap: 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid #cbd6dc;
+}
+
+.tema span {
+  min-width: 30px;
+  color: #365e7c;
+  font-size: 14px;
+}
+
+.tema h3 {
+  margin: 0 0 10px;
+  color: #142a42;
+  font-size: 24px;
+}
+
+.tema p {
+  margin: 0;
+}
+
+/* Trayectoria y formación */
+.trayectoria {
+  max-width: 900px;
+  margin-top: 70px;
+}
+
+.trayectoria h3 {
+  margin: 18px 0 25px;
+  color: #142a42;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.2;
+}
+/* Ideas y publicaciones */
+.publicacion-destacada,
+.grupo-publicaciones {
+  margin-top: 70px;
+}
+
+.publicacion-destacada {
+  max-width: 900px;
+  padding: 32px;
+  background: #e5edf0;
+}
+
+.publicacion-destacada h3,
+.grupo-publicaciones h3 {
+  margin: 16px 0;
+  color: #142a42;
+  font-size: 32px;
+}
+
+.publicacion-destacada a,
+.grupo-publicaciones > a {
+  color: #365e7c;
+  font-weight: bold;
+}
+
+.tarjetas-publicaciones {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.tarjeta-publicacion {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  border: 1px solid #dce3e7;
+  background: #ffffff;
+  color: #142a42;
+  text-decoration: none;
+}
+
+.tarjeta-publicacion small {
+  color: #58768a;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.tarjeta-publicacion h4 {
+  margin: 20px 0 10px;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.tarjeta-publicacion p {
+  font-size: 16px;
+}
+
+.tarjeta-publicacion span {
+  margin-top: auto;
+  padding-top: 18px;
+  color: #365e7c;
+  font-weight: bold;
+}
+
+.tarjeta-publicacion:hover,
+.tarjeta-publicacion:focus-visible {
+  border-color: #365e7c;
+}
+
+@media (max-width: 700px) {
+  .tarjetas-publicaciones {
+    grid-template-columns: 1fr;
+  }
+}
