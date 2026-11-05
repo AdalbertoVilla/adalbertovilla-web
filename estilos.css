@@ -1,0 +1,65 @@
+/* Colores y tipografía generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #142a42;
+  background-color: #f2f5f6;
+}
+
+/* Encabezado */
+header {
+  padding: 24px 7%;
+  background-color: #0c264c;
+  color: #ffffff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 8px 0 0;
+  color: #afcbd9;
+  font-size: 14px;
+}
+
+/* Contenido principal */
+main {
+  padding: 100px 7%;
+  background-color: #0c264c;
+  color: #ffffff;
+}
+
+main h2 {
+  max-width: 800px;
+  margin: 0 0 24px;
+  font-size: clamp(40px, 7vw, 76px);
+  line-height: 1.1;
+}
+
+main p {
+  max-width: 650px;
+  color: #d7e7ed;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Pie de página */
+footer {
+  padding: 24px 7%;
+  color: #60768a;
+  font-size: 14px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+}
