@@ -209,3 +209,50 @@ main {
     box-sizing: border-box;
   }
 }
+/* Fotografía en la sección de inicio */
+.retrato {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border: 3px solid #edf2f1;
+  border-radius: 12px;
+}
+
+/* En computadora, coloca la foto al lado del texto */
+@media (min-width: 901px) {
+  .inicio {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 380px);
+    column-gap: 50px;
+    align-items: center;
+  }
+
+  .inicio > :not(.retrato) {
+    grid-column: 1;
+  }
+
+  .retrato {
+    grid-column: 2;
+    grid-row: 1 / 5;
+  }
+}
+
+/* En pantallas pequeñas, coloca la foto debajo de los botones */
+@media (max-width: 900px) {
+  .retrato {
+    margin-top: 45px;
+  }
+}
+/* Logo y nombre en el encabezado */
+.nombre {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  display: block;
+  width: 42px;
+  height: auto;
+}
