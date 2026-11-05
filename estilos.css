@@ -63,3 +63,149 @@ footer {
     font-size: 18px;
   }
 }
+/* Menú de navegación */
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.nombre {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  color: #afcbd9;
+}
+
+/* Primera sección */
+main {
+  padding: 0;
+  background: none;
+  color: inherit;
+}
+
+.inicio {
+  padding: 100px 7%;
+  background-color: #0c264c;
+  color: #ffffff;
+}
+
+.inicio h1 {
+  max-width: 800px;
+  margin: 28px 0;
+  font-size: clamp(40px, 7vw, 76px);
+  line-height: 1.1;
+}
+
+.etiqueta {
+  color: #afcbd9;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.introduccion {
+  max-width: 650px;
+  color: #d7e7ed;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 16px 22px;
+  border: 1px solid #d7e7ed;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.boton-principal {
+  background: #d7e7ed;
+  color: #0c264c;
+}
+
+.boton-secundario {
+  color: #ffffff;
+}
+
+/* Secciones */
+.seccion {
+  padding: 90px 7%;
+}
+
+.seccion h2 {
+  max-width: 800px;
+  font-size: clamp(30px, 4vw, 48px);
+}
+
+.seccion p {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.numero-seccion {
+  color: #365e7c;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.seccion-azul {
+  background: #0c264c;
+  color: #ffffff;
+}
+
+.seccion-azul .numero-seccion {
+  color: #afcbd9;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 700px) {
+  .encabezado {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .menu {
+    gap: 14px;
+  }
+
+  .inicio,
+  .seccion {
+    padding: 65px 6%;
+  }
+
+  .boton {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
