@@ -518,3 +518,27 @@ blockquote {
     white-space: nowrap;
   }
 }
+/* Marca personal en el pie de página */
+.pie-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.marca-pie {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #0c264c;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo-pie {
+  display: block;
+  width: 36px;
+  height: auto;
+}
